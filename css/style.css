@@ -30,14 +30,14 @@ h6 {
 html,
 body {
   font-family: "Monserrat", sans-serif;
-  max-width: 478px;
+  max-width: 470px;
   background: #ddd;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   color: #222;
   cursor: default;
-
+  -webkit-text-size-adjust: none;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -122,7 +122,7 @@ table {
 /* //////////////////END SLIDER /////////////// */
 .main_wrapper {
   margin: 0 auto;
-  width: 478px;
+  max-width: 470px;
   background: #fff;
 }
 .offer_section .main_title {
@@ -141,7 +141,7 @@ table {
 .info_block {
   background: rgba(235, 235, 235, 0.8);
 
-  width: 99%;
+  width: 100%;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
