@@ -12,11 +12,11 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('указать!', 'Фрилансер по жизни');
+	$mail->setFrom('pirlovski1992@gmail.com', 'Фрилансер по жизни');
 	//Кому отправить
-	$mail->addAddress('указать!');
+	$mail->addAddress('pirlovski1992@gmail.com');
 	//Тема письма
-	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+	$mail->Subject = 'Замовлення по дропшипінгу"';
 
 	//Рука
 	$hand = "Правая";
@@ -60,7 +60,7 @@
 
 	//Отправляем
 	if (!$mail->send()) {
-		$message = 'Ошибка';
+		$message = 'Помилка в sendmail.php';
 	} else {
 		$message = 'Данные отправлены!';
 	}
