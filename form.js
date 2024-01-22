@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       alert("Заповніть будь ласка поле -Ім'я- та -Телефон- ");
     }
-    alert("Після виберіть варіант відправки та розмір");
   }
 
   function formValidate(form) {

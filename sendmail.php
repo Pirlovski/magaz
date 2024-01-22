@@ -24,23 +24,23 @@
 	}
 
 	//Тело письма
-	$body = '<h1>Встречайте супер письмо!</h1>';
+	$body = '<h1>Приймай замовлення </h1>';
 	
 	if(trim(!empty($_POST['name']))){
-		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
+		$body.='<p><strong>Імя:</strong> '.$_POST['name'].'</p>';
 	}
 	if(trim(!empty($_POST['email']))){
 		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 	}
 	if(trim(!empty($_POST['hand']))){
-		$body.='<p><strong>Рука:</strong> '.$hand.'</p>';
+		$body.='<p><strong>Варіант відправки:</strong> '.$hand.'</p>';
 	}
 	if(trim(!empty($_POST['age']))){
-		$body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
+		$body.='<p><strong>Розмір:</strong> '.$_POST['age'].'</p>';
 	}
 	
 	if(trim(!empty($_POST['message']))){
-		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
+		$body.='<p><strong>Повідомлення:</strong> '.$_POST['message'].'</p>';
 	}
 	
 	//Прикрепить файл
@@ -59,7 +59,7 @@
 
 	//Отправляем
 	if (!$mail->send()) {
-		$message = 'Помилка';
+		$message = 'Помилка в ПШП';
 	} else {
 		$message = 'Замовлення прийнято.Чекайте на звінок менеджера для уточнення всіх деталей';
 	}
