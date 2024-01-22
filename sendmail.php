@@ -18,9 +18,9 @@
 	$mail->Subject = 'Привіт . Ти добився свого .Продовжуй в тому ж дусі!!!!!';
 
 	//Рука
-	$hand = "Правая";
-	if($_POST['hand'] == "left"){
-		$hand = "Левая";
+	$hand = "НОВА ПОШТА";
+	if($_POST['hand'] == "НОВА ПОШТА"){
+		$hand = "УКРПОШТА";
 	}
 
 	//Тело письма
@@ -31,6 +31,9 @@
 	}
 	if(trim(!empty($_POST['email']))){
 		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
+	}
+	if(trim(!empty($_POST['tel']))){
+		$body.='<p><strong>номер телефону:</strong> '.$_POST['tel'].'</p>';
 	}
 	if(trim(!empty($_POST['hand']))){
 		$body.='<p><strong>Варіант відправки:</strong> '.$hand.'</p>';
