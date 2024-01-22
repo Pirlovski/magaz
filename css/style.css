@@ -415,7 +415,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 148px;
 }
 .uk .uk_title {
   width: 400px;
@@ -471,7 +471,7 @@ img {
   }
 }
 
-.footer_title {
+/* .footer_title {
   margin: 57px 0;
   text-align: center;
   font-size: 36px;
@@ -481,4 +481,4 @@ img {
 }
 .footer_text {
   color: #fcd800;
-}
+} */
