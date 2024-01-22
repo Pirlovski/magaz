@@ -187,62 +187,74 @@
             </section>
             <div class="wrapper">
                 <div class="form">
-                    <form action="#form" id="form" class="form__body">
+                    <form action="#" id="form" class="form__body">
                         <h1 class="form__title">Оформлення замовлення </h1>
                         <div class="form__item">
-                            <label for="formName" class="form__label">Ім'я :</label>
-                            <input id="formName" type="text" name="name" placeholder="Іванов Іван Іванович"
-                                class="form__input _req">
+                            <label for="formName" class="form__label">Ім'я*:</label>
+                            <input id="formName" type="text" name="name" class="form__input _req">
                         </div>
                         <div class="form__item">
-                            <label for="formEmail" class="form__label">Телефон:</label>
-                            <input id="formEmail" type="tel" name="phone" placeholder="+380-(97)-123-45-67"
-                                class="form__input _req ">
+                            <label for="formName" class="form__label">Телефон*:</label>
+                            <input id="formName" type="tel" name="tel" class="form__input _req">
+                        </div>
+                        <div class="form__item none ">
+                            <label for="formEmail" class="form__label">Пошта*:</label>
+                            <input id="formEmail" value="pirlovski1992@gmail.com" type="text" name="email"
+                                class="form__input _req _email">
                         </div>
                         <div class="form__item">
-                            <div class="form__label">Варіанти відправки:</div>
+                            <div class="form__label">Варіанти відправки</div>
                             <div class="options">
                                 <div class="options__item">
                                     <input id="formRightHanded" checked type="radio" value="right" name="hand"
                                         class="options__input">
-                                    <label for="formRightHanded" class="options__label">НОВА
-                                        ПОШТА</label>
+                                    <label for="formRightHanded" class="options__label"><span>Нова Пошта </span></label>
                                 </div>
                                 <div class="options__item">
                                     <input id="formLeftHanded" type="radio" value="left" name="hand"
                                         class="options__input">
-                                    <label for="formLeftHanded" class="options__label"><span>УКРПОШТА</span></label>
+                                    <label for="formLeftHanded" class="options__label"><span>Укрпошта</span></label>
                                 </div>
                             </div>
                         </div>
                         <div class="form__item">
                             <label for="formMessage" class="form__label">Повідомлення:</label>
-                            <textarea name="message"
-                                placeholder="Приклад:Місто Київ ,НП 1 або Укрпошта обов'язково вказуйте індекс"
-                                id="formMessage" class="form__input"></textarea>
+                            <textarea name="message" id="formMessage" class="form__input"></textarea>
                         </div>
+
                         <div class="form__item">
-                            <div class="form__label"> ВИБРАТИ РОЗМІР:</div>
-
-                            <select name="age" class="form__select none">
-                                <option class="opt" value="от 18 до 25" selected>Молодой</option>
-                                <option value="от 25 до 45">Старый</option>
-                                <option value="от 45">Супер стар</option>
-                            </select>
-                            <select name="age" class="form__select ">
-                                <option class="opt" value="86-100 бедра" selected>S-L</option>
-                                <option class="opt" value="101-130 бедра">XXL</option>
-                                <option class="opt" value="120-145 бедра">XXXL</option>
+                            <div class="form__label">Розмір:</div>
+                            <select name="age" class="form__select">
+                                <option value="86-100" selected>S-L(86-100)</option>
+                                <option value="101-130">XXL(101-130)</option>
+                                <option value="120-145">XXXL(120-145)</option>
                             </select>
                         </div>
+                        <!-- ////////////////////НЕ АКТИВНЕ.... -->
+                        <div class="form__item none">
+                            <div class="form__label">Прикрепить фото</div>
+                            <div class="file">
+                                <div class="file__item">
+                                    <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+                                        class="file__input">
+                                    <div class="file__button">Выбрать</div>
+                                </div>
+                                <div id="formPreview" class="file__preview"></div>
+                            </div>
+                        </div>
 
-
-                        <button type="submit" class="form__button">Відправити</button>
-                        <h2 class="footer_title"><span class="footer_text">ВСЕ</span> БУДЕ</h2>
+                        <div class="form__item none">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement"
+                                    class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на
+                                        обработку персональных данных в соответствии с <a
+                                            href="">Условиями</a>*</span></label>
+                            </div>
+                        </div>
+                        <!-- ////////////////////НЕ АКТИВНЕ.... -->
+                        <button type="submit" class="form__button">Відправити замовлення</button>
                     </form>
-                    <section class="uk">
-                        <h1 class="uk_title">Ukraine</h1>
-                    </section>
                 </div>
             </div>
         </main>
