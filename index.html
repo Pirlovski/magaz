@@ -185,23 +185,24 @@
 
 
             </section>
-            <div class="wrapper">
+            <div class="wrapper ">
                 <div class="form">
                     <form action="#" id="form" class="form__body">
                         <h1 class="form__title">Оформлення замовлення </h1>
                         <div class="form__item">
                             <label for="formName" class="form__label">Ім'я*:</label>
-                            <input id="formName" type="text" name="name" placeholder="Іванов Іван Іванович"
-                                class="form__input _req">
+                            <input id="formName" type="text" name="name" autocomplete="off"
+                                placeholder="Іванов Іван Іванович" class="form__input _req">
                         </div>
                         <div class="form__item">
-                            <label for="formName" class="form__label">Телефон*:</label>
-                            <input id="formName" type="tel" name="tel" value="+380" class="form__input _req">
+                            <label for="formtel" class="form__label">Телефон*:</label>
+                            <input id="formtel" type="number" name="tel" autocomplete="off" placeholder="380978927536"
+                                class="form__input _req">
                         </div>
-                        <div class="form__item none ">
+                        <div class="form__item none">
                             <label for="formEmail" class="form__label">Пошта*:</label>
-                            <input id="formEmail" value="pirlovski1992@gmail.com" type="text" name="email"
-                                class="form__input _req _email">
+                            <input id="formEmail" value="pirlovski1992@gmail.com" type="text" autocomplete="off"
+                                name="email" class="form__input _req _email">
                         </div>
                         <div class="form__item">
 
@@ -258,18 +259,19 @@
                         </div>
                         <!-- ////////////////////НЕ АКТИВНЕ.... -->
 
+                        <button type="submit" class="form__button">Відправити замовлення</button>
                     </form>
-                    <button type="submit" class="form__button">Відправити замовлення</button>
 
                 </div>
             </div>
+
         </main>
     </div>
 
 
-    <script src="./script.js"></script>
-    <script src="./form.js"></script>
-    <script src="./select.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/select.js"></script>
 </body>
 
 </html>
