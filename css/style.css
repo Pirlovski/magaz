@@ -26,7 +26,11 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
-
+/* @media screen and (max-device-width: 480px) {
+  body {
+    
+  }
+} */
 html,
 body {
   font-family: "Monserrat", sans-serif;
@@ -121,6 +125,7 @@ table {
 }
 /* //////////////////END SLIDER /////////////// */
 .main_wrapper {
+  /* width: 100vw; */
   margin: 0 auto;
   max-width: 470px;
   background: #fff;
@@ -305,7 +310,7 @@ img {
 .cat_item-span {
   position: absolute;
   top: 15px;
-  left: 349px;
+  left: 223px;
   font-size: 18px;
   font-weight: 600;
 
@@ -325,7 +330,7 @@ img {
 }
 .oldprice {
   position: absolute;
-  left: 274px;
+  left: 206px;
   top: 33px;
   font-size: 18px;
   font-weight: 700;
@@ -335,7 +340,7 @@ img {
 }
 .newprice {
   position: absolute;
-  left: 336px;
+  left: 257px;
   top: 58px;
   font-size: 32px;
   font-weight: 700;
@@ -377,13 +382,14 @@ img {
   height: 100px;
   margin: 0;
 }
-.order_img-absolut {
+
+/* .order_img-absolut {
   position: absolute;
   top: 21px;
   left: 192px;
   width: 72px;
   height: 52px;
-}
+} */
 .absolut2 {
   left: 212px;
 }
