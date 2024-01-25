@@ -476,7 +476,21 @@ img {
     transform: translateX(350px);
   }
 }
-
+.red {
+  color: red;
+}
+.mini_title {
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: none;
+  text-transform: lowercase;
+}
+.div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 /* .footer_title {
   margin: 57px 0;
   text-align: center;
